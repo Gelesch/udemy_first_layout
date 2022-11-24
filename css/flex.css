@@ -1,0 +1,48 @@
+.flex_1{
+  height: 800px;
+ border: 1px solid;
+ display: flex;
+ /*выравниваются по строке*/
+ /* flex-direction: row;*/
+
+ /*выравниваются в колонку */
+/* flex-direction: column*/
+
+ /* выравниваются по провому краю*/
+ /*flex-direction: row-reverse;*/
+
+/* переносится на другую строчку
+ flex-wrap: wrap;*/
+
+ /*выравнивание  горизонтальной прямойтекста*/
+ justify-content:space-around;
+
+ /*выравнивает по вертикальной прямой*/
+align-items: /*stretch*/   
+/*flex-start*/ /*выравниваются относительно начала;*/
+
+center; /* выравнивает относительно центра*/
+
+ /*flex-flow:row-reverse wrap;*/
+
+flex-wrap: wrap;
+
+ 
+}
+.flex_1 div{
+  border: 1px solid;
+  height: 50px;
+  flex-basis: 30%;
+  /*может ли ширина контейнера увеличиваться исходя из текста*/
+  flex-grow: 1;
+  /*может ли ширина контейнера уменьшаться исходя их текста*/
+  /*flex-shrink: 1;*/
+/**/
+
+}
+.flex_1 div:last-child{
+ /* align-self: flex-start;*/
+ /*помогает менять местами блокии*/
+}.flex_1 div:first-child{
+ order: 3;; 
+}
